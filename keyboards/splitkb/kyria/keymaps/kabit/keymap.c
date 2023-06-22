@@ -44,35 +44,35 @@ combo_t key_combos[] = {
      static const uint8_t homerow[] = {
           14, 15, 16, 17, 45, 46, 47, 48
      };
-     p_homerow = homerow;
+     p_homerow = &homerow;
      static const uint8_t controls[] = {
           0, 1, 2, 3, 4, 5, 6, 12, 18, 24, 31, 32, 33, 34, 35, 36, 37, 43, 49, 55
      };
-     p_controls = controls;
+     p_controls = &controls;
      static const uint8_t characters[] = {
           7, 8, 9, 10, 11, 13, 14, 15, 16, 17, 19, 20, 21, 22, 23, 38, 39, 40, 41, 42, 44, 45, 46, 47, 48, 50, 51, 52, 53, 54
      };
-     p_characters = characters;
+     p_characters = &characters;
      static const uint8_t numpad_nums[] = {
           38, 39, 40, 41, 45, 46, 47, 51, 52, 53
      };
-     p_numpad_nums = numpad_nums;
+     p_numpad_nums = &numpad_nums;
      static const uint8_t numpad_syms[] = {
           50, 44, 54, 48, 42
      };
-     p_numpad_syms = numpad_syms;
+     p_numpad_syms = &numpad_syms;
      static const uint8_t arrows[] = {
           45, 46, 47, 52
      };
-     p_arrows = arrows;
+     p_arrows = &arrows;
      static const uint8_t umlauts[] = {
           14, 15, 16, 17
      };
-     p_umlauts = umlauts;
+     p_umlauts = &umlauts;
      static const uint8_t macros[] = {
           9
      };
-     p_macros = macros;
+     p_macros = &macros;
 #endif
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
