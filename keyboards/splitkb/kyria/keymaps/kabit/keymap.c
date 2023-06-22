@@ -44,35 +44,43 @@ combo_t key_combos[] = {
      static const uint8_t homerow[] = {
           14, 15, 16, 17, 45, 46, 47, 48
      };
-     p_homerow = &homerow;
+     int size_homerow = sizeof(homerow);
+     const uint8_t *p_homerow = homerow;
      static const uint8_t controls[] = {
           0, 1, 2, 3, 4, 5, 6, 12, 18, 24, 31, 32, 33, 34, 35, 36, 37, 43, 49, 55
      };
-     p_controls = &controls;
+     int size_controls = sizeof(controls);
+     const uint8_t *p_controls = controls;
      static const uint8_t characters[] = {
           7, 8, 9, 10, 11, 13, 14, 15, 16, 17, 19, 20, 21, 22, 23, 38, 39, 40, 41, 42, 44, 45, 46, 47, 48, 50, 51, 52, 53, 54
      };
-     p_characters = &characters;
+     int size_characters = sizeof(characters);
+     const uint8_t *p_characters = characters;
      static const uint8_t numpad_nums[] = {
           38, 39, 40, 41, 45, 46, 47, 51, 52, 53
      };
-     p_numpad_nums = &numpad_nums;
+     int size_numpad_nums = sizeof(numpad_nums);
+     const uint8_t *p_numpad_nums = numpad_nums;
      static const uint8_t numpad_syms[] = {
           50, 44, 54, 48, 42
      };
-     p_numpad_syms = &numpad_syms;
+     int size_numpad_syms = sizeof(numpad_syms);
+     const uint8_t *p_numpad_syms = numpad_syms;
      static const uint8_t arrows[] = {
           45, 46, 47, 52
      };
-     p_arrows = &arrows;
+     int size_arrows = sizeof(arrows);
+     const uint8_t *p_arrows = arrows;
      static const uint8_t umlauts[] = {
           14, 15, 16, 17
      };
-     p_umlauts = &umlauts;
+     int size_umlauts = sizeof(umlauts);
+     const uint8_t *p_umlauts = umlauts;
      static const uint8_t macros[] = {
           9
      };
-     p_macros = &macros;
+     int size_macros = sizeof(macros);
+     const uint8_t *p_macros = macros;
 #endif
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -137,7 +145,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  // |----------+---------+---------+---------+---------+---------|                                              |---------+---------+---------+---------+---------+----------|
       _______,   KT_UM_A,  KT_UM_O,  KT_ESZ ,  KT_UM_U,  XXXXXXX,                                                 XXXXXXX,  KC_LEFT,  KC_DOWN,  KC_RGHT,  XXXXXXX,  _______,
  // |----------+---------+---------+---------+---------+---------+---------------------.  ,---------------------+---------+---------+---------+---------+---------+----------|
-      _______,   XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_DOT ,   _______,      _______,   _______,   XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  _______,
+      _______,   XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_DOT ,   _______,      _______,   _______,   XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_DOT ,  XXXXXXX,  _______,
  // `------------------------------+---------+---------+---------+----------+----------|  |----------+----------+---------+---------+---------+------------------------------'
                                      _______,  _______,  _______,  _______,   _______,      _______,   _______,   _______,  _______,  _______
  //                                `---------+---------+---------+----------+----------|  |----------+----------+---------+---------+---------'

@@ -245,54 +245,54 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                case _QWERTY:
                     break;
                case _DOWN:
-                    for (int index = 0; index < sizeof(p_controls); index++) {
+                    for (int index = 0; index < size_controls; index++) {
                          rgb_matrix_set_color(p_controls[index], RGB_GREEN);
                     }
-                    for (int index = 0; index < sizeof(p_arrows); index++) {
+                    for (int index = 0; index < size_arrows; index++) {
                          rgb_matrix_set_color(p_arrows[index], RGB_CYAN);
                     }
-                    for (int index = 0; index < sizeof(p_umlauts); index++) {
+                    for (int index = 0; index < size_umlauts; index++) {
                          rgb_matrix_set_color(p_umlauts[index], RGB_GOLDENROD);
                     }
                     break;
                case _LEFT:
-                    for (int index = 0; index < sizeof(p_controls); index++) {
+                    for (int index = 0; index < size_controls; index++) {
                          rgb_matrix_set_color(p_controls[index], RGB_GREEN);
                     }
-                    for (int index = 0; index < sizeof(p_numpad_nums); index++) {
+                    for (int index = 0; index < size_numpad_nums; index++) {
                          rgb_matrix_set_color(p_numpad_nums[index], RGB_CYAN);
                     }
-                    for (int index = 0; index < sizeof(p_numpad_syms); index++) {
+                    for (int index = 0; index < size_numpad_syms; index++) {
                          rgb_matrix_set_color(p_numpad_syms[index], RGB_RED);
                     }
                     break;
                case _RGHT:
                     // Control Keys
-                    for (int index = 0; index < sizeof(p_controls); index++) {
+                    for (int index = 0; index < size_controls; index++) {
                          rgb_matrix_set_color(p_controls[index], RGB_PURPLE);
                     }
-                    for (int index = 0; index < sizeof(p_macros); index++) {
+                    for (int index = 0; index < size_macros; index++) {
                          rgb_matrix_set_color(p_macros[index], RGB_RED);
                     }
                     rgb_matrix_set_color(24, RGB_CHARTREUSE);
                     break;
                case _UP:
                     // Control Keys
-                    for (int index = 0; index < sizeof(p_controls); index++) {
+                    for (int index = 0; index < size_controls; index++) {
                          rgb_matrix_set_color(p_controls[index], RGB_GREEN);
                     }
                     // Characters
-                    for (int index = 0; index < sizeof(p_characters); index++) {
+                    for (int index = 0; index < size_characters; index++) {
                          rgb_matrix_set_color(p_characters[index], RGB_CYAN);
                     }
                     break;
                default:
                     // Control Keys
-                    for (int index = 0; index < sizeof(p_controls); index++) {
+                    for (int index = 0; index < size_controls; index++) {
                          rgb_matrix_set_color(p_controls[index], RGB_PURPLE);
                     }
                     // Characters
-                    for (int index = 0; index < sizeof(p_homerow); index++) {
+                    for (int index = 0; index < size_homerow; index++) {
                          rgb_matrix_set_color(p_homerow[index], RGB_GREEN);
                     }
                     break;

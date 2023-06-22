@@ -47,14 +47,22 @@ enum custom_keycodes {
 };
 
 // stubbing in LED location arrays
-uint8_t *p_homerow;
-uint8_t *p_controls;
-uint8_t *p_characters;
-uint8_t *p_numpad_nums;
-uint8_t *p_numpad_syms;
-uint8_t *p_arrows;
-uint8_t *p_umlauts;
-uint8_t *p_macros;
+const uint8_t *p_homerow;
+int size_homerow;
+const uint8_t *p_controls;
+int size_controls;
+const uint8_t *p_characters;
+int size_characters;
+const uint8_t *p_numpad_nums;
+int size_numpad_nums;
+const uint8_t *p_numpad_syms;
+int size_numpad_syms;
+const uint8_t *p_arrows;
+int size_arrows;
+const uint8_t *p_umlauts;
+int size_umlauts;
+const uint8_t *p_macros;
+int size_macros;
 
 // Defined keycode macros
 #define DEAD    KC_NO
