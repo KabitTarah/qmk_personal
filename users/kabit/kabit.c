@@ -84,11 +84,11 @@ bool get_gui_state(void) {
                     // Page up/Page down
                     if (clockwise) {
                         for (int i=0; i<10; i++) {
-                            tap_code(KC_UP);
+                            tap_code(KC_DOWN);
                         }
                     } else {
                         for (int i=0; i<10; i++) {
-                            tap_code(KC_DOWN);
+                            tap_code(KC_UP);
                         }
                     }
                 } else {

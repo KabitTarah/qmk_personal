@@ -16,6 +16,8 @@
 
 #pragma once
 
+#define LAYOUT_wrapper(...)   LAYOUT(__VA_ARGS__)
+
 #ifdef OLED_DRIVER_ENABLE
   #define OLED_DISPLAY_128X64
 #endif
@@ -46,7 +48,6 @@
 
 #ifdef RGB_MATRIX_ENABLE
   #define USB_MAX_POWER_CONSUMPTION 500
-  #define RGB_MATRIX_MAXIMUM_BRIGHTNESS 64
   #define ENABLE_RGB_MATRIX_SOLID_COLOR
   #define RGB_MATRIX_KEYPRESSES
   #define SPLIT_LAYER_STATE_ENABLE

@@ -4,7 +4,6 @@
 
 #include QMK_KEYBOARD_H
 
-#define LAYOUT_wrapper(...)            LAYOUT(__VA_ARGS__)
 
 bool get_shift_state(void);
 bool get_ctrl_state(void);
@@ -114,8 +113,6 @@ int size_macros;
 #define OS_LEFT OSL(_LEFT)
 #define OS_RGHT OSL(_RGHT)
 #define OS_DOWN OSL(_DOWN)
-
-#define LAYOUT_wrapper(...) LAYOUT(__VA_ARGS__)
 
 // !! EMPTY ROWS
 #define _____EMPTY_DISABLED_____ XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
@@ -235,7 +232,7 @@ int size_macros;
 // .                           +_________+_________+_________+_________+_________+
 #define _____SAR1_ROW_2L_____    KC_C   ,  KC_A   ,  KC_S   ,  KC_D   ,  KC_2   
 // .                           +_________+_________+_________+_________+_________+_________+_________+
-#define _____SAR1_ROW_3L_____    XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_4   ,  KC_3   ,  XXXXXXX,  XXXXXXX
+#define _____SAR1_ROW_3L_____    XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_4   ,  KC_3
 // .                           +_________+_________+_________+_________+_________+_________+_________+
 #define _____SAR1_ROW_4L_____                        XXXXXXX,  KC_LCTL,  KC_E   ,  KC_SPC ,  KC_Q
 // .                                               +_________+_________+_________+_________+_________+
