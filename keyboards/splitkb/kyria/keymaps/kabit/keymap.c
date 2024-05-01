@@ -22,8 +22,8 @@
 // COMBOS
 const uint16_t PROGMEM combo_down[] =  {KC_LCTL, KC_LSFT, COMBO_END};
 const uint16_t PROGMEM combo_left[] =  {KC_LALT, KC_ESC, COMBO_END};
-const uint16_t PROGMEM combo_right[] = {KC_RCTL, KC_SPC, COMBO_END};
-const uint16_t PROGMEM combo_up[] =    {KC_RALT, KC_LGUI, COMBO_END};
+const uint16_t PROGMEM combo_right[] =    {KC_RALT, KC_LGUI, COMBO_END};
+const uint16_t PROGMEM combo_up[] = {KC_RCTL, KC_SPC, COMBO_END};
 combo_t key_combos[] = {
     COMBO(combo_down, MO(_DOWN)),
     COMBO(combo_left, MO(_LEFT)),
