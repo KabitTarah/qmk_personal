@@ -19,6 +19,7 @@ enum layers {
     _RGHT,
     _DOWN,
     _MACRO2,
+    _SAR,
 };
 
 extern layer_state_t os;
@@ -92,6 +93,7 @@ int size_macros;
 #define TO_LEFT TO(_LEFT)
 #define TO_RGHT TO(_RGHT)
 #define TO_DOWN TO(_DOWN)
+#define TT_SAR  TT(_SAR)
 #define TT_UP   TT(_UP)
 #define TT_LEFT TT(_LEFT)
 #define TT_RGHT TT(_RGHT)
@@ -225,5 +227,17 @@ int size_macros;
 
 // !! MACRO Layer 2
 // ?? Not used yet
+
+// !! Super Animal Royale
+// ??        - LEFT SIDE ONLY
+// .                           +_________+_________+_________+_________+_________+
+#define _____SAR1_ROW_1L_____    KC_M   ,  XXXXXXX,  KC_W   ,  KC_R   ,  KC_1   
+// .                           +_________+_________+_________+_________+_________+
+#define _____SAR1_ROW_2L_____    KC_C   ,  KC_A   ,  KC_S   ,  KC_D   ,  KC_2   
+// .                           +_________+_________+_________+_________+_________+_________+_________+
+#define _____SAR1_ROW_3L_____    XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_4   ,  KC_3   ,  XXXXXXX,  XXXXXXX
+// .                           +_________+_________+_________+_________+_________+_________+_________+
+#define _____SAR1_ROW_4L_____                        XXXXXXX,  KC_LCTL,  KC_E   ,  KC_SPC ,  KC_Q
+// .                                               +_________+_________+_________+_________+_________+
 
 #endif
